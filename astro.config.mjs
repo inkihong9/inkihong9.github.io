@@ -7,4 +7,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://inkihong9.github.io',
+  base: '/inkihong9.github.io',
 });
