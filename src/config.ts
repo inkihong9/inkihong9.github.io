@@ -109,15 +109,15 @@ export const siteConfig = {
         
       ],
     },
-    {
-      school: "Online Platform",
-      degree: "Full Stack Development Certificate",
-      dateRange: "2019",
-      achievements: [
-        "Completed 500+ hours of coursework",
-        "Built 10+ portfolio projects",
-        "Specialized in React and Node.js",
-      ],
-    },
+    // {
+    //   school: "Online Platform",
+    //   degree: "Full Stack Development Certificate",
+    //   dateRange: "2019",
+    //   achievements: [
+    //     "Completed 500+ hours of coursework",
+    //     "Built 10+ portfolio projects",
+    //     "Specialized in React and Node.js",
+    //   ],
+    // },
   ],
 };
