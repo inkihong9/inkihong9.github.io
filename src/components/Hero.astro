@@ -139,14 +139,14 @@ import { siteConfig } from "../config";
       <h1
         class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
       >
-        I'm <span style={{ color: siteConfig.accentColor }}
+        My name is <span style={{ color: siteConfig.accentColor }}
           >{siteConfig.name}</span
         >
       </h1>
       <p
         class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
       >
-        {siteConfig.title}
+        and I'm a {siteConfig.title}
       </p>
     </div>
   </div>
@@ -212,7 +212,7 @@ import { siteConfig } from "../config";
         </a>
       )
     }
-    {
+    <!-- {
       siteConfig.social?.twitter && (
         <a
           href={siteConfig.social.twitter}
@@ -241,7 +241,7 @@ import { siteConfig } from "../config";
           </svg>
         </a>
       )
-    }
+    } -->
     {
       siteConfig.social?.github && (
         <a

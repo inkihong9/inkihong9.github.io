@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from "../config";
 
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+// const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
@@ -70,7 +70,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               ></path></svg
             >
           </a>
-          <a
+          <!-- <a
             href={siteConfig.social.twitter}
             target="_blank"
             rel="noopener noreferrer"
@@ -93,7 +93,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path
                 d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg
             >
-          </a>
+          </a> -->
           <a
             href={siteConfig.social.github}
             target="_blank"
@@ -128,7 +128,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
             class="text-sm text-gray-600 hover:text-gray-800 transition-colors"
             >About</a
           >
-          {
+          <!-- {
             hasProjects && (
               <a
                 href="#projects"
@@ -137,7 +137,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
                 Projects
               </a>
             )
-          }
+          } -->
           {
             hasExperience && (
               <a

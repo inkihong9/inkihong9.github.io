@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Inki Hong",
-  title: "Senior Site Reliability Engineer",
+  title: "Senior Software Engineer",
   description: "Inki's portfolio and personal website",
   accentColor: "#1d4ed8",
   social: {
@@ -8,9 +8,10 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/ihong9/",
     github: "https://github.com/inkihong9",
   },
-  aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Java", "Python", "Django", "Flask", "JavaScript", "TypeScript", "SQL", "Apex", "SpringBoot", "React", "Node.js", "Angular", "GraphQL", "Salesforce", "Kubernetes", "GitLab CI/CD", "Docker", "AWS", "Postman", "Splunk", "Oracle", "MySQL", "PostgreSQL"],
+  aboutMe: "Senior Software Engineer with a decade of experience in backend and full-stack development, cloud-native architectures, and scalable solutions. Passionate about mentoring engineers and delivering high-impact technical projects.",
+  skills: ["Java", "Python", "JavaScript","SQL", "HTML5", "Salesforce Apex","AWS", "Kubernetes", "Docker","Firebase", "Spring Boot","Django", "Flask", "Node.js","React", "Angular", "RESTful APIs","GraphQL", "Oracle", "Azure","GitLab", "GitHub", "VS Code","PyCharm", "IntelliJ IDEA","DataGrip", "DBeaver", "Postman","JIRA", "Confluence", "ChatGPT","GitHub Copilot"],
+  
+
   // projects: [
   //   {
   //     name: "AI Dev Roundup Newsletter",
@@ -36,9 +37,9 @@ export const siteConfig = {
   // ],
   experience: [
     {
-      company: "T-Mobile | Atlanta, GA",
+      company: "T-Mobile US",
       title: "Senior Site Reliability Engineer",
-      dateRange: "Aug 2024 - Aug 2025",
+      dateRange: "08/2024 - Present",
       bullets: [
         "Led backend service development with Spring Boot and Python, improving deployment reliability and scalability.",
         "Automated deployments, monitoring, and incident response using Kubernetes and GitLab CI/CD, reducing downtime.",
@@ -47,9 +48,9 @@ export const siteConfig = {
       ],
     },
     {
-      company: "T-Mobile | Atlanta, GA",
+      company: "T-Mobile US",
       title: "Software Engineer",
-      dateRange: "Mar 2021 - Aug 2024",
+      dateRange: "03/2021 - 08/2024",
       bullets: [
         "Designed and implemented backend web services with Spring Boot, powering critical business operations.",
         "Developed automation scripts in Python to support system monitoring and infrastructure tasks.",
@@ -58,9 +59,9 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Zuora | Atlanta, GA",
+      company: "Zuora",
       title: "Senior Technical Consultant",
-      dateRange: "May 2019 - Mar 2021",
+      dateRange: "05/2019 - 03/2021",
       bullets: [
         "Delivered scalable Salesforce + Zuora Billing solutions for enterprise clients, enabling subscription workflows and automated renewals.",
         "Built and deployed Salesforce applications (Apex, Lightning, REST/SOAP APIs) integrated with Zuora’s platform.",
@@ -69,9 +70,9 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Zuora | Atlanta, GA",
+      company: "Zuora",
       title: "Technical Consultant",
-      dateRange: "May 2017 - May 2019",
+      dateRange: "05/2017 - 05/2019",
       bullets: [
         "Developed custom Salesforce solutions (Visualforce, Apex triggers, Lightning Components) for subscription and billing use cases.",
         "Designed and implemented integrations between Salesforce and Zuora to support complex billing requirements.",
@@ -80,18 +81,18 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Daugherty Business Solutions | Atlanta, GA",
+      company: "Daugherty Business Solutions",
       title: "Software Engineer 2",
-      dateRange: "Feb 2017 - May 2017",
+      dateRange: "02/2017 - 05/2017",
       bullets: [
         "Built features for a global hotel management system used by Hyatt, leveraging Spring Boot, Oracle SQL, and jQuery.",
         "Designed versioned deployments to improve release management, pioneering new practices within the client team",
       ],
     },
     {
-      company: "Daugherty Business Solutions | Atlanta, GA",
+      company: "Daugherty Business Solutions",
       title: "Software Engineer 1",
-      dateRange: "Jan 2015 - Feb 2017",
+      dateRange: "01/2015 - 02/2017",
       bullets: [
         "Developed APIs and business logic to support hotel booking and group reservation systems.",
         "Improved Oracle database performance by optimizing queries and schema design.",
@@ -103,8 +104,8 @@ export const siteConfig = {
   education: [
     {
       school: "Georgia State University",
-      degree: "Bachelor of Science in Computer Science",
-      dateRange: "2012 - 2014",
+      degree: "B.S. Computer Science",
+      dateRange: "2014",
       achievements: [
         
       ],
