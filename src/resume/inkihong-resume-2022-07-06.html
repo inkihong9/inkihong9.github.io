@@ -1,0 +1,222 @@
+<style>
+	* {
+		margin: 0 auto;
+		font-family: Arial, Verdana;
+	}
+
+	@page {
+		size: Letter;
+		margin: 0;
+	}
+	  
+	@media print {
+		html, page {
+			margin: 0;
+    		box-shadow: 0;
+		}
+	}
+
+	page[size="Letter"] {
+  		width: 28cm;
+  		height: 36.2cm;
+ 		display: block;
+  		box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+	}
+
+	header {
+		background-color: rgb(33, 55, 64);
+		height: 50mm;
+	}
+
+	header div.header-section {
+		height: 50mm;
+		width: 14cm;
+		position: relative;
+		float: left;
+		display: block;
+	}
+
+	header h1 {
+		color: white;
+		padding: 15mm 0mm 5mm 15mm;
+	}
+
+	header h3 {
+		color: white;
+		padding-left: 15mm;
+		padding-right: 5mm;
+	}
+
+	header p {
+		color: white;
+		padding: 15mm 15mm 5mm 0mm;
+	}
+
+	div.body {
+		background-color: rgb(255, 254, 241);
+		width: 20.25cm;
+		float: left;
+		display: block;
+		position: relative;
+		height: 31.2cm;
+	}
+
+	div.right-body {
+		background-color: rgb(240, 240, 240);
+		width: 7.75cm;
+		float: left;
+		display: block;
+		position: relative;
+		height: 31.2cm;
+	}
+
+	div.body h2 {
+		padding: 5mm 0mm 5mm 15mm;
+	}
+
+	div.right-body h2 {
+		padding: 5mm;
+	}
+
+	div.body table {
+		width: 20.25cm;
+		padding: 0mm 15mm 5mm 15mm;
+	}
+
+	div.right-body table {
+		width: 7.75cm;
+		padding: 0mm 5mm 5mm 5mm;
+	}
+
+	div table {
+		font-size: 11pt;
+	}
+
+	div table tr th {
+		text-align: left;
+	}
+
+	div table tr td.spacer {
+		height: 10mm;
+	}
+
+	div table tr td.half-spacer {
+		height: 5mm;
+	}
+
+	div.right-body table tr td {
+		padding-bottom: 7mm;	
+	}
+</style>
+<page size="Letter">
+	<header>
+		<div class="header-section">
+			<h1>Inki Hong</h1>
+			<h3>Software Engineer</h3>
+		</div>
+		<div class="header-section" style="text-align: right;">
+			<p>
+				800 Abbotts Mill Ct. Duluth, GA 30097<br />
+				(770) 331-1138<br />
+				ihong3589@gmail.com<br />
+				https://linkedin.com/in/ihong9
+			</p>
+		</div>
+	</header>
+	<div class="body">
+		<h2>Work Experience</h2>
+		<table>
+			<tr><th>T-Mobile USA | Atlanta, GA | March 2021 - Present</th></tr>
+			<tr><td>Software Engineer | March 2021 - Present</td></tr>
+			<tr><td>
+				<ul>
+					<li>Took lead on building a REST API to manage change requests and deployments.</li>
+					<li>Built an automated testing framework to test key business flows.</li>
+					<li>Built a REST API to output the health check statuses of different environments and applications at different time periods.</li>
+					<li>Improved software development protocol by enforcing code reviews, versioning/tagging, and sharing my experience on agile methodologies and DevOps.</li>
+					<li>Contributed to building front-end application for clients to manage different environments.</li>
+				</ul>
+			</td></tr>
+			<tr><td class="half-spacer"></td></tr>
+			<tr><th>Zuora, Inc | Atlanta, GA | May 2017 - March 2021</th></tr>
+			<tr><td>Senior Technical Consultant | May 2019 - Present</td></tr>
+			<tr><td>
+				<ul>
+					<li>Mentored several junior members on Salesforce and its best practices.</li>
+					<li>Lead multiple bootcamp sessions for the new hires.</li>
+					<li>Educated several clients on Zuora products through technical workshops.</li>
+					<li>Developed and delivered several custom Salesforce application for a several Fortune 500 companies.</li>
+					<li>Designed several scalable solutions for clients working with big data.</li>
+				</ul>
+			</td></tr>
+			<tr><td class="half-spacer"></td></tr>
+			<tr><td>Technical Consultant | May 2017 - May 2019</td></tr>
+			<tr><td>
+				<ul>
+					<li>Mainly responsible for implementing Zuora's billing and subscription system for clients.
+					<li>Started the open source project with emphasis on reusable assets.</li>
+					<li>Created a web application for exporting data in real time.</li>
+					<li>Designed several custom solutions for clients with myriads of business rules.</li>
+				</ul>
+			</td></tr>
+			<tr><td class="spacer"></td></tr>
+			<tr><th>Daugherty Business Solutions | Atlanta, GA | January 2015 - May 2017</th></tr>
+			<tr><td>Software Engineer II, Consultant | February 2017 - May 2017</td></tr>
+			<tr><td>
+				<ul>
+					<li>Mentored several junior members of the team on Java programming, Oracle SQL, and basics of DevOps.</li>
+					<li>Took charge of the data migration for adapting them into the new software.</li>
+					<li>Managed weekly production release using SVN, JIRA, and Jenkins</li>
+					<li>Made several improvements to the continuous integration and delivery process by automation, and took part on creating automation tool with Python</li>
+					<li>Took charge of the data migration for adapting them into the new software.</li>
+				</ul>
+			</td></tr>
+			<tr><td class="half-spacer"></td></tr>
+			<tr><td>Software Engineer I, Consultant | January 2015 - February 2017</td></tr>
+			<tr><td>
+				<ul>
+					<li>Mainly responsible for software development - software upgrade, legacy code migration, adding new features, fixing bugs, international language/locale support, improving application/refactoring code, etc.</li>
+					<li>Wrote several shell scripts, DDL and DML, edited crontabs for QA, UAT, and Production servers to ensure smooth operation.</li>
+					<li>Participated in the regular QA, UAT, and Production database maintenance.</li>
+					<li>Made improvements to Informatica workflow to handle daily payloads.</li>
+				</ul>
+			</td></tr>
+		</table>
+		<h2>Education</h2>
+		<table>
+			<tr><th>Georgia Institute of Technology</th></tr>
+			<tr><td>Master of Science, Computer Science</td></tr>
+			<tr><td>Expected May 2023</td></tr>
+			<tr><td class="spacer"></td></tr>
+			<tr><th>Georgia State University</th></tr>
+			<tr><td>Bachelor of Science, Computer Science</td></tr>
+			<tr><td>May 2014</td></tr>
+		</table>
+	</div>
+	<div class="right-body">
+		<h2>Skills</h2>
+		<table>
+			<tr><th>Languages</th></tr>
+			<tr><td>Java, Python, Apex, HTML5/CSS3, JavaScript, TypeScript</td></tr>
+			<tr><th>Cloud Technologies</th></tr>
+			<tr><td>AWS (Amazon Web Services), Kubernetes</td></tr>
+			<tr><th>Web Technologies</th></tr>
+			<tr><td>REST, Microservices, Spring Framework, Python Django, Angular</td></tr>
+			<tr><th>Database/Big Data</th></tr>
+			<tr><td>Oracle SQL, PrestoSQL, Amazon Redis</td></tr>
+			<tr><th>Version Control Tools</th></tr>
+			<tr><td>Git, GitLab</td></tr>
+			<tr><th>CRM Tools</th></tr>
+			<tr><td>Salesforce</td></tr>
+		</table>
+		<h2>Certification</h2>
+		<table>
+			<tr><th>Salesforce Platform Developer I</th></tr>
+			<tr><td>June 2019<br />Credential ID 20152868</td></tr>
+		</table>
+		<table>
+			<tr><th>Zuora Business Analyst</th></tr>
+			<tr><td>January 2021<br />Credential ID 2116683587</td></tr>
+		</table>
+	</div>
+</page>

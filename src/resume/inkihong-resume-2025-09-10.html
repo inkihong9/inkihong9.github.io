@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0;
+        }
+
+        @media print {
+
+            html,
+            body {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            page {
+                box-shadow: none;
+            }
+        }
+
+        page[size="Letter"] {
+            width: 28cm;
+            height: 36.2cm;
+            display: block;
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            background-color: #ddd;
+            height: 125px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content-row {
+            display: flex;
+            width: 100%;
+            height: calc(100% - 125px);
+        }
+
+        .left {
+            width: 30%;
+            background-color: #f8f8f8;
+            min-height: 100%;
+            box-sizing: border-box;
+            padding: 12px 12px;
+        }
+
+        .right {
+            width: 70%;
+            min-height: 100%;
+            box-sizing: border-box;
+            padding: 12px 12px;
+            background: #fff;
+        }
+
+        /* Second page layout: no header, sections fill full height */
+        .page-no-header .content-row {
+            height: 100%;
+        }
+
+        /* Hide border/shadow for print */
+        @media print {
+            page[size="Letter"] {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <page size="Letter">
+        <header>
+            <h1>Inki Hong</h1>
+            <div class="subtext">Atlanta, GA | ihong3589@gmail.com | (770) 331-1138 | <a
+                    href="https://www.linkedin.com/in/ihong9/">https://www.linkedin.com/in/ihong9/</a> | <a
+                    href="https://github.com/inkihong9">https://github.com/inkihong9</a></div>
+        </header>
+        <div class="content-row">
+            <div class="left">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div><b>Languages: </b>Java, Python (Django, Flask), JavaScript, TypeScript, SQL, Apex</div>
+                    <div><b>Frameworks & Platforms: </b>Spring Boot, React, GraphQL, Salesforce (Apex, Lightning, Visualforce), Zuora Billing</div>
+                    <div><b>DevOps & Tools: </b>Kubernetes, GitLab CI/CD, Docker, AWS, Postman, Splunk</div>
+                    <div><b>Databases: </b>Oracle, MySQL, PostgreSQL</div>
+                </div>
+                <h2>Education</h2>
+                <p><strong>Bachelor of Science in Computer Science</strong><br />
+                Georgia State University — Atlanta, GA</p>
+            </div>
+            <div class="right">
+                <h2>Professional Experience</h2>
+
+                <h3>T-Mobile | Atlanta, GA</h3>
+                <div class="job-title">Senior Site Reliability Engineer (Aug 2024 – Present)</div>
+                <ul>
+                    <li>Led backend service development with Spring Boot and Python, improving deployment reliability and scalability.</li>
+                    <li>Automated deployments, monitoring, and incident response using Kubernetes and GitLab CI/CD, reducing downtime.</li>
+                    <li>Mentored junior engineers, led intern bootcamps, and conducted technical interviews to grow team capability.</li>
+                    <li>Built React-based admin dashboards integrated with GraphQL APIs, streamlining change management and deployments.</li>
+                </ul>
+                <div class="job-title">Software Engineer (Mar 2021 – Aug 2024)</div>
+                <ul>
+                    <li>Designed and implemented backend web services with Spring Boot, powering critical business operations.</li>
+                    <li>Developed automation scripts in Python to support system monitoring and infrastructure tasks.</li>
+                    <li>Collaborated with cross-functional teams to deliver microservices and APIs with strong reliability guarantees.</li>
+                    <li>Contributed to DevOps practices with Kubernetes, AWS, and GitLab CI/CD to improve delivery pipelines.</li>
+                </ul>
+
+                <h3>Zuora | Atlanta, GA</h3>
+                <div class="job-title">Senior Technical Consultant (May 2019 – Mar 2021)</div>
+                <ul>
+                    <li>Delivered scalable Salesforce + Zuora Billing solutions for enterprise clients, enabling subscription workflows and automated renewals.</li>
+                    <li>Built and deployed Salesforce applications (Apex, Lightning, REST/SOAP APIs) integrated with Zuora’s platform.</li>
+                    <li>Led data migration and large-scale integration projects, ensuring accuracy and seamless transitions for Fortune 500 clients.</li>
+                    <li>Mentored junior consultants in Salesforce and Zuora best practices.</li>
+                </ul>
+                <div class="job-title">Technical Consultant (May 2017 – May 2019)</div>
+                <ul>
+                    <li>Developed custom Salesforce solutions (Visualforce, Apex triggers, Lightning Components) for subscription and billing use cases.</li>
+                    <li>Designed and implemented integrations between Salesforce and Zuora to support complex billing requirements.</li>
+                    <li>Collaborated with clients to run technical workshops, educating them on Zuora’s Salesforce packages and best practices.</li>
+                    <li>Launched open-source, reusable Salesforce/Zuora components to accelerate client implementations.</li>
+                </ul>
+            </div>
+        </div>
+    </page>
+    <page size="Letter" class="page-no-header">
+        <div class="content-row">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <h3>Daugherty Business Solutions | Atlanta, GA</h3>
+                <div class="job-title">Software Engineer II (Feb 2017 – May 2017)</div>
+                <ul>
+                    <li>Built features for a global hotel management system used by Hyatt, leveraging Spring Boot, Oracle SQL, and jQuery.</li>
+                    <li>Designed versioned deployments to improve release management, pioneering new practices within the client team.</li>
+                </ul>
+                <div class="job-title">Software Engineer I (Jan 2015 – Feb 2017)</div>
+                <ul>
+                    <li>Developed APIs and business logic to support hotel booking and group reservation systems.</li>
+                    <li>Improved Oracle database performance by optimizing queries and schema design.</li>
+                    <li>Collaborated directly with client stakeholders to translate requirements into technical deliverables.</li>
+                    <li>Maintained build and deployment pipelines, integrating with Jenkins and version control tools.</li>
+                </ul>
+            </div>
+        </div>
+    </page>
+    <!-- <page size="Letter" class="page-no-header">
+        <div class="content-row">
+            <div class="left">
+                second page left section
+            </div>
+            <div class="right">
+                second page right section
+            </div>
+        </div>
+    </page> -->
+</body>
+
+</html>
+
+<!--
+JavaScript
+Microservices Architecture
+Python
+TypeScript
+Oracle Database
+DevOps
+Back-End Development
+Application Programming Interface (API)
+Web Services
+Structured Query Language (SQL)
+Java
+Oracle SQL
+Kubernetes
+Spring Web MVC
+Spring AOP
+Spring Hibernate
+Spring Data REST
+Spring Boot
+Spring Data JPA
+Spring Framework
+GitLab CI/CD
+GitLab
+Git
+GitHub
+Git Bash
+Azure SQL 
+RESTful APIs
+React.js
+GraphQL
+Flask Web Framework
+Django Web Framework
+Django REST Framework
+Atlassian JIRA
+Atlassian Jira Service Desk
+Atlassian Confluence
+Atlassian SDK
+Jira Query Language
+Salesforce Apex
+Salesforce Object Query Language
+Salesforce Lightning
+Salesforce Development
+Jenkins
+Apache ActiveMQ
+Node.js
+Angular
+-->
