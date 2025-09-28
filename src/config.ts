@@ -6,7 +6,7 @@ export const siteConfig = {
   social: {
     email: "ihong3589@gmail.com",
     linkedin: "https://www.linkedin.com/in/ihong9/",
-    github: "https://github.com/inkihong9",
+    github: "https://www.github.com/inkihong9",
   },
   aboutMe: "Senior Software Engineer with a decade of experience in backend and full-stack development, cloud-native architectures, and scalable solutions. Passionate about mentoring engineers and delivering high-impact technical projects.",
   skills: ["Java", "Python", "JavaScript","SQL", "HTML5", "Salesforce Apex","AWS", "Kubernetes", "Docker","Firebase", "Spring Boot","Django", "Flask", "Node.js","React", "Angular", "RESTful APIs","GraphQL", "Oracle", "Azure","GitLab", "GitHub", "VS Code","PyCharm", "IntelliJ IDEA","DataGrip", "DBeaver", "Postman","JIRA", "Confluence", "ChatGPT","GitHub Copilot"],
