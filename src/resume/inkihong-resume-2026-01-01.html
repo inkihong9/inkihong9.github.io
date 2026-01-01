@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inkihong-resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            font-size: 11pt;
+        }
+
+        @page {
+            size: Letter;
+        }
+
+        @media print {
+
+            html,
+            body {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            page {
+                box-shadow: none;
+            }
+        }
+
+        page[size="Letter"] {
+            width: 8.5in;
+            height: 11in;
+            padding: 0.375in;
+            display: block;
+            box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+            margin-bottom: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header {
+            border-bottom: 1px solid black;
+            display: flex;
+            padding: 0 0 0.25in 0;
+        }
+
+        header div.name {
+            width: 50%;
+            float: left;
+        }
+
+        header div.contact {
+            width: 50%;
+            float: left;
+            text-align: right;
+        }
+
+        h1, h2, p, h3, div.subtext {
+            margin: 0 0 0.15in 0; /* top right bottom left */
+        }
+
+        h1 {
+            font-size: 26pt;
+        }
+
+        h2 {
+            font-size: 18pt;
+        }
+
+        h3 {
+            font-size: 12pt;
+            margin: 0 0 0.05in 0; /* top right bottom left */
+        }
+
+        div.content-row {
+            display: flex;
+            width: 100%;
+            margin: 0.25in 0 0 0; /* top right bottom left */
+            height: calc(100% - 1.2in)
+        }
+
+        div.main {
+            width: 73%;
+            box-sizing: border-box;
+            padding: 0 0.25in 0 0; /* top right bottom left */
+        }
+
+        div.support {
+            width: 27%;
+            box-sizing: border-box;
+            border-left: 1px solid black;
+            padding-left: 0.15in; /* top right bottom left */
+        }
+
+        div.company-header, div.job-title-header {
+            margin: 0;
+            font-size: 11pt;
+        }
+
+        div.company-header {
+            font-weight: bold;
+        }
+
+        div.job-title-header {
+            font-style: italic;
+        }
+
+        div.job-title {
+            display: block;
+            text-align: left;
+            float: left;
+        }
+
+        div.job-title-duration {
+            display: block;
+            text-align: right;
+        }
+
+        ul {
+            padding-inline-start: 17px;
+            margin: 0.05in 0 0.2in 0; /* top right bottom left */
+        }
+
+        div.spacer {
+            height: 0.2in;
+        }
+
+        /* Hide border/shadow for print */
+        @media print {
+            page[size="Letter"] {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <page size="Letter">
+        <header>
+            <div class="name">
+                <h1 class="title">Inki Hong</h1>
+            </div>
+            <div class="contact">
+                Duluth, GA
+                <br />
+                <a href="mailto:ihong3589@gmail.com">ihong3589@gmail.com</a>
+                <br />
+                <a href="https://www.linkedin.com/in/ihong9" target="_blank">https://www.linkedin.com/in/ihong9</a>
+                <br />
+                <a href="https://www.github.com/inkihong9" target="_blank">https://www.github.com/inkihong9</a>
+            </div>
+        </header>
+        <div class="content-row">
+            <div class="main">
+                <!--
+                <h2>Summary</h2>
+                <p>Senior Software Engineer with a decade of experience in backend and full-stack development, cloud-native architectures, and scalable solutions. Passionate about mentoring engineers and delivering high-impact technical projects.</p>
+                
+                <div class="spacer"></div>
+                -->
+
+                <h2>Professional Experience</h2>
+
+                <!-- t-mobile -->
+                <div class="company-header">T-Mobile US</div>
+                <div class="job-title-header">
+                    <div class="job-title">Senior Software Engineer (Backend)</div>
+                    <div class="job-title-duration">Mar 2021 - Oct 2025</div>
+                </div>
+                <ul>
+                    <li>Designed and developed backend services and RESTful APIs using Java and Spring Boot to support change notifications and external application development workflows.</li>
+                    <li>Led a team of 7 developers, assigning work, reviewing GitLab merge requests, and ensuring code quality and delivery consistency across backend services.</li>
+                    <li>Acted as a technical point of contact for backend components, contributing to service design decisions and guiding implementation within the team.</li>
+                    <li>Built automation and Selenium-based testing scripts to validate web application behavior and reduce manual testing effort.</li>
+                    <li>Wrote custom SQL queries to support internal reporting and analytics needs, enabling management to consume accurate data through downstream BI tools.</li>
+                </ul>
+                <div class="spacer"></div>
+                
+                <!-- zuora -->
+                <div class="company-header">Zuora</div>
+                <div class="job-title-header">
+                    <div class="job-title">Senior Technical Consultant</div>
+                    <div class="job-title-duration">May 2017 - Mar 2021</div>
+                </div>
+                <ul>
+                    <li>Implemented backend-heavy business logic for billing, subscriptions, usage, invoicing, and payments across 20–30 client environments, focusing on correctness and data consistency.</li>
+                    <li>Built and maintained integration logic using Zuora APIs and Salesforce managed packages to synchronize data between Salesforce and Zuora platforms.</li>
+                    <li>Developed custom functionality using Salesforce Apex and SOQL, and wrote supporting code in Java and Ruby within Zuora Connect and workflow-based execution environments to implement client-specific logic.</li>
+                    <li>Partnered with solution architects to translate business requirements into technical implementations, contributing practical design input based on platform constraints.</li>
+                    <li>Served as a technical point of contact by reviewing implementations, unblocking engineers, and working directly with clients to clarify requirements and debug production issues.</li>
+                </ul>
+                <div class="spacer"></div>
+
+                <!-- daugherty business solutions -->                
+                <div class="company-header">Daugherty Business Solutions</div>
+                <div class="job-title-header">
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-title-duration">Jan 2015 - May 2017</div>
+                </div>
+                <ul>
+                    <li>Developed and maintained a Java-based web application using the Spring Framework, packaged as WAR files and deployed to a Resin application server.</li>
+                    <li>Implemented core backend logic for pricing calculations, bookings, and room inventory management, ensuring correctness and scalability across a large hotel portfolio.</li>
+                    <li>Worked extensively with Oracle SQL to design queries and data access logic supporting transactional and reporting needs.</li>
+                    <li>Contributed to server-side rendered UI using JSP and plain JavaScript (including jQuery), supporting end-to-end application functionality.</li>
+                    <li>Introduced versioned deployments and improved release management practices within the team, reducing deployment risk and increasing release reliability.</li>
+                </ul>
+            </div>
+            <div class="support">
+                <h2>Skills</h2>
+                <h3>Languages</h3>
+                <p>Java, Python, JavaScript, SQL, Salesforce Apex</p>
+                <h3>Backend & APIs</h3>
+                <p>RESTful APIs, Spring Boot, Django, Flask</p>
+                <h3>Cloud & DevOps</h3>
+                <p>Docker, AWS, GitLab CI/CD</p>
+                <h3>Data & Platforms</h3>
+                <p>Oracle SQL, Salesforce, Zuora, Firebase</p>
+                
+                <div class="spacer"></div>
+
+                <h2>Education</h2>
+                <div class="company-header">Georgia State University, 2014</div>
+                <div class="job-title-header">
+                    <div class="job-title">B.S., Computer Science</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </page>
+</body>
+</html>
